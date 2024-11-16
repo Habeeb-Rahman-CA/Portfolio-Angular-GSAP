@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 :root {
-  --color-dark: rgb(27, 27, 27);
+  --color-light: #fefdfe;
 }
 
 *,
@@ -15,6 +14,85 @@ html {
   box-sizing: border-box;
 }
 
-img{
-  
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+body {
+  font-family: "Source Sans 3", Arial, Helvetica, sans-serif;
+  box-sizing: inherit;
+  position: relative;
+  background-color: var(--color-light);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.main {
+  display: grid;
+  grid-template-columns:
+    minmax(50px, 1fr) [layout-start] repeat(12, minmax(min-content, 130px))
+    [layout-end] minmax(50px, 1fr);
+  grid-template-rows: 50px 300px repeat(2, 100vh);
+}
+
+.header,
+.center-info,
+.section-one,
+.section-two {
+  grid-column: layout-start/ layout-end;
+}
+
+.header {
+  grid-row: 1/2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 50px;
+  right: 50px;
+}
+
+.logo {
+  .h4 {
+    font-size: 40px;
+  }
+}
+
+.nav {
+  .burger-icon {
+    width: 30px;
+    height: 2px;
+    background: #000;
+    position: relative;
+  }
+  .burger-icon::before,
+  .burger-icon::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #000;
+  }
+  .burger-icon::before {
+    top: -6px;
+  }
+  .burger-icon::after {
+    top: 6px;
+  }
+}
+.center-info {
+  grid-row: 2/3;
+  align-self: center;
 }
