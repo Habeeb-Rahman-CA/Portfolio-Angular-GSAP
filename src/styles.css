@@ -38,10 +38,9 @@ body {
 
 .main {
   display: grid;
-  grid-template-columns:
-    minmax(50px, 1fr) [layout-start] repeat(12, minmax(min-content, 130px))
-    [layout-end] minmax(50px, 1fr);
+  grid-template-columns: 50px repeat(12, minmax(min-content, 130px)) 50px;
   grid-template-rows: 50px 300px repeat(2, 100vh);
+  gap: 20px;
 }
 
 .header,
@@ -113,7 +112,7 @@ body {
 .section-one {
   grid-row: 3/4;
   display: grid;
-  grid-template: repeat(3, 330px / repeat(4, 1fr));
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
 
@@ -123,10 +122,6 @@ body {
   grid-template-columns: 50% repeat(2, 25%);
   grid-template-rows: 150px repeat(4, min-content);
   gap: 15px;
-
-  .section-two > * {
-    grid-column: 2/-1;
-  }
 
   .letter {
     position: relative;
@@ -202,7 +197,7 @@ body {
   height: 100%;
   align-items: center;
   font-weight: 500;
-  figcaption{
+  figcaption {
     font-size: 14px;
     font-weight: normal;
     position: absolute;
