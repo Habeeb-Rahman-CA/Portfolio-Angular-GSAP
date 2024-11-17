@@ -7,11 +7,11 @@
       <div class="burger-icon"><i class="fa-solid fa-bars"></i></div>
     </div>
   </div>
-  <div class="container">
-    <div class="center-info py-4">
+  <div class="container mt-4">
+    <div class="center-info py-4 mb-5">
       <div class="center-info-box d-flex justify-content-between" #centerBox>
         <div class="center-info-box-left">
-          Sort by <span class="">Latest</span>
+          Sort by <span class="lat-text">Latest</span>
         </div>
         <div class="center-info-box-right">2024</div>
       </div>
@@ -29,9 +29,9 @@
           </figure>
         </div>
         <div class="col-3">
-          <figure class="image-container" #imageThird>
-            <div class="fig">PixelPulse</div>
-            <figcaption class="caption">
+          <figure class="image-container position-relative" #imageThird>
+            <div class="figHead position-absolute">PixelPulse</div>
+            <figcaption class="figCap position-absolute">
               Web developer by day, gym rat by night, and full-time professional
               at eating and sleeping. Code, carbs, and curls—life in perfect
               balance!
@@ -39,8 +39,8 @@
           </figure>
         </div>
         <div class="col-3">
-          <figure class="image-container">
-            <figcaption class="caption" #imageFourthCap>'20</figcaption>
+          <figure class="image-container position-relative">
+            <figcaption class="caption-2 position-absolute fs-1" #imageFourthCap>'20</figcaption>
             <img src="3.jpg" alt="" #imageFourth />
           </figure>
         </div>
@@ -48,12 +48,12 @@
       <div class="row">
         <div class="col-3">
           <figure class="image-container">
-            <figcaption class="caption">'25</figcaption>
+            <figcaption class="caption fs-1">'25</figcaption>
           </figure>
         </div>
         <div class="col-3">
           <figure class="image-container">
-            <figcaption class="caption">Devops</figcaption>
+            <figcaption class="caption fs-1 text-end">Devops</figcaption>
           </figure>
         </div>
         <div class="col-3">
@@ -63,24 +63,24 @@
         </div>
         <div class="col-3">
           <figure class="image-container">
-            <figcaption class="caption" #imageFourthCap>Story</figcaption>
+            <figcaption class="caption fs-1" #imageFourthCap>Story</figcaption>
           </figure>
         </div>
       </div>
     </section>
 
-    <section class="section-two py-5">
+    <section class="section-two mt-5">
       <div class="row">
         <div class="col-6"></div>
         <div class="col-6">
-          <div class="letter" #letter>
-            <span>A</span>
-            <span>(1 Items)</span>
+          <div class="letter position-relative" #letter>
+            <span class="text-danger fs-1">A</span>
+            <span class="span-2 position-absolute">(1 Items)</span>
           </div>
           <div class="titles" #titles>
-            <div class="title-1">
-              <span class="num">01</span>
-              <h1>About</h1>
+            <div class="title-1 position-relative">
+              <span class="num position-absolute">01</span>
+              <h1 class="fs-1">About The Weirdo.</h1>
             </div>
             <p class="paragraph">
               I'm Habeeb Rahman CA, a passionate self-taught web developer with

@@ -35,3 +35,40 @@ body {
   height: 300px;
   width: 100%;
 }
+
+.lat-text{
+  text-decoration: underline;
+}
+
+.caption-2{
+  top: -56px;
+  right: 0;
+}
+
+.figHead{
+  top: 32%;
+  left: 28px;
+  font-size: 44px;
+}
+
+.figCap{
+  font-size: 10px;
+  text-align: justify;
+  bottom: 0;
+}
+
+.span-2{
+  top: 12px;
+  font-size: 12px;
+}
+
+.num{
+  left: -12px;
+  top: 8px;
+  font-size: 8px;
+}
+
+.paragraph{
+  font-size: 14px;
+  text-align: start;
+}
