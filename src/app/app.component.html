@@ -1,65 +1,107 @@
 <div class="main">
-  <div class="header" #header>
+  <div class="header d-flex justify-content-between p-3" #header>
     <div class="logo">
       <h4 class="heading-4">hr.</h4>
     </div>
     <div class="nav">
-      <div class="burger-icon"></div>
+      <div class="burger-icon"><i class="fa-solid fa-bars"></i></div>
     </div>
   </div>
-  <div class="center-info">
-    <div class="center-info-box" #centerBox>
-      <div class="center-info-box-left">Sort by <span>Latest</span></div>
-      <div class="center-info-box-right">2024</div>
-    </div>
-  </div>
-  <section class="section-one" #sectionOne>
-    <figure class="image-container one">
-      <img src="1.jpg" alt="" />
-      <figcaption class="caption">24</figcaption>
-    </figure>
-    <figure class="image-container">
-      <img src="2.jpg" alt="" #imageSecond />
-      <figcaption class="caption" #imageSecondCap>Devop</figcaption>
-    </figure>
-    <figure class="image-container" #imageThird>
-      <div class="fig">PixelPulse</div>
-      <figcaption class="caption">
-        Web developer by day, gym rat by night, and full-time professional at
-        eating and sleeping. Code, carbs, and curls—life in perfect balance!
-      </figcaption>
-    </figure>
-    <figure class="image-container">
-      <figcaption class="caption" #imageFourthCap>'20</figcaption>
-      <img src="3.jpg" alt="" #imageFourth />
-    </figure>
-    <figure class="image-container" #imageFifth>
-      <img src="4.jpg" alt="" #imageFourth />
-      <figcaption class="caption" #imageFourthCap>'20</figcaption>
-    </figure>
-  </section>
-
-  <section class="section-two">
-    <div class="letter" #letter>
-      <span>A</span>
-      <span>(1 Items)</span>
-    </div>
-    <div class="titles" #titles>
-      <div class="title-1">
-        <span class="num">01</span>
-        <h1>About</h1>
+  <div class="container">
+    <div class="center-info py-4">
+      <div class="center-info-box d-flex justify-content-between" #centerBox>
+        <div class="center-info-box-left">
+          Sort by <span class="">Latest</span>
+        </div>
+        <div class="center-info-box-right">2024</div>
       </div>
-      <p class="paragraph">
-        I'm Habeeb Rahman CA, a passionate self-taught web developer with a
-        strong expertise in Angular. I enjoy creating dynamic and responsive web
-        applications that solve real-world problems.
-      </p>
-      <figure class="image-1" #imageOne>
-        <img src="5.jpg" alt="">
-      </figure>
-      <figure class="image-2" #imageTwo>
-        <img src="6.jpg" alt="">
-      </figure>
     </div>
-  </section>
+    <section class="section-one" #sectionOne>
+      <div class="row">
+        <div class="col-3">
+          <figure class="image-container one">
+            <img src="1.jpg" alt="" />
+          </figure>
+        </div>
+        <div class="col-3">
+          <figure class="image-container">
+            <img src="2.jpg" alt="" #imageSecond />
+          </figure>
+        </div>
+        <div class="col-3">
+          <figure class="image-container" #imageThird>
+            <div class="fig">PixelPulse</div>
+            <figcaption class="caption">
+              Web developer by day, gym rat by night, and full-time professional
+              at eating and sleeping. Code, carbs, and curls—life in perfect
+              balance!
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-3">
+          <figure class="image-container">
+            <figcaption class="caption" #imageFourthCap>'20</figcaption>
+            <img src="3.jpg" alt="" #imageFourth />
+          </figure>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <figure class="image-container">
+            <figcaption class="caption">'25</figcaption>
+          </figure>
+        </div>
+        <div class="col-3">
+          <figure class="image-container">
+            <figcaption class="caption">Devops</figcaption>
+          </figure>
+        </div>
+        <div class="col-3">
+          <figure class="image-container">
+            <img src="4.jpg" alt="" #imageFourth />
+          </figure>
+        </div>
+        <div class="col-3">
+          <figure class="image-container">
+            <figcaption class="caption" #imageFourthCap>Story</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-two py-5">
+      <div class="row">
+        <div class="col-6"></div>
+        <div class="col-6">
+          <div class="letter" #letter>
+            <span>A</span>
+            <span>(1 Items)</span>
+          </div>
+          <div class="titles" #titles>
+            <div class="title-1">
+              <span class="num">01</span>
+              <h1>About</h1>
+            </div>
+            <p class="paragraph">
+              I'm Habeeb Rahman CA, a passionate self-taught web developer with
+              a strong expertise in Angular. I enjoy creating dynamic and
+              responsive web applications that solve real-world problems.
+            </p>
+            <div class="row">
+              <div class="col-6">
+                <figure class="image-1" #imageOne>
+                  <img src="5.jpg" alt="" />
+                </figure>
+              </div>
+              <div class="col-6">
+                <figure class="image-2" #imageTwo>
+                  <img src="6.jpg" alt="" />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 </div>
